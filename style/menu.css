@@ -1,0 +1,97 @@
+.moduloMenu{
+	padding:none;
+	margin-right: 3em;
+	margin-bottom:1em;
+	width:300px; 
+	height:auto;
+	display:inline-block;
+	position: relative;
+	text-align: center;
+
+
+
+}
+.menuFondo1{
+	width: 20%;
+	background-color: #ffffff;
+	text-align: center;
+
+
+
+}
+.ulu{
+	z-index: 800;
+}
+.menuFondo{
+	background-color: #ffffff;
+
+
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	border: o none;
+	position: relative;
+}
+
+
+#menu_gral {
+	width: 350px;
+	color: #282828;
+
+}
+#menu_gral ul {
+
+	list-style-type: none; 
+
+	text-align: left;
+}
+#menu_gral > ul li {
+/*border-top: 1px solid rgba(255,255,255,.1);*/
+}
+#menu_gral li a {
+	display: block;
+	text-decoration: none;
+	font-size: 1rem;
+	line-height: 2.5rem;
+	color: #444;
+	padding-left: 5px;
+}
+#menu_gral li:hover a, #menu_gral li a:focus {
+	background: #8DA889;
+	color: #282828;
+}
+
+#menu_gral li ul {
+	position: absolute;
+	width: 0;
+	left: 100%;
+	top: 0;
+	overflow: hidden;
+}
+#menu_gral li:hover ul, #menu_gral li:focus ul {
+	width: 30%;
+	background:  #bbb;
+	
+
+
+}
+#menu_gral li li {
+	padding: 0;
+	margin: 0 auto;
+	border: o none;
+	position: relative;
+	display: block;
+	width: auto;
+}
+#menu_gral li:hover li a, #menu_gral li:focus li a {
+	font-size: .9rem;
+	line-height: 1.7rem;
+	background: #fff;
+}
+#menu_gral li li a:hover, #menu_gral li li a:focus {
+	/*background: #8AA9B8;*/
+	color: #f44336;
+}
