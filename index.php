@@ -10,7 +10,10 @@ $_SESSION['id_cate'] = 3;
 	<title>Industria Comercial Santa MAria</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" type="text/css" href="style/menu.css">
-	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="static/js/bxslider/jquery.bxslider.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="static//js/bxslider/jquery.bxslider.css">
 </head>
 <body>
 
@@ -35,39 +38,37 @@ $_SESSION['id_cate'] = 3;
 	</header> 
 
 	<section>
-		
-		<div id="banner">
-			<div id="banner_contenido">
-				<div id="banner_centro">
-					
-					<div id="titutlo_categoria">
-						PRODUCTOS DE <br> SEGURIDAD INDUSTRIAL 
+		<div id="banner_centro">
+			<ul class="main-slider">
+				<li>
+					<img src="static/img/baner1.jpg" class="banner">
+					<div class="banner-ctn">
+						<h2>PRODUCTOS DE <br> SEGURIDAD INDUSTRIAL</h2>
+						<ul>
+							<li>
+								<a href="javascript:;">
+									<img src="imagenes/ic_chaleco.png">
+									<label>Chaleco</label>
+								</a>
+							</li>
+						</ul>
 					</div>
-
-					<div id="menus">
-						<?php
-						for ($i=0; $i < 10; $i++) { 
-							# code...
-							echo "<div class='menu1'>
-							<table>
-								<tr>
-									<td><img class='img_cate' src='imagenes/ic_chaleco.png'></td>
-								</tr>
-								<tr>
-									<td>Chalecos</td>
-								</tr>
-							</table>
-						</div>";
-					}
-					?>
-
-
-				</div>
-			</div>
-		</div>
-
-
-
+				</li>
+				<li>
+					<img src="static/img/baner2.jpg"  class="banner">
+					<div class="banner-ctn">	
+						<h2>PRODUCTOS DE <br> SEGURIDAD INDUSTRIAL2</h2>
+						<ul>
+							<li>
+								<a href="javascript:;">
+									<img src="imagenes/ic_chaleco.png">
+									<label>Chaleco</label>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>						
+			</ul>
 	</div>
 
 	<div id="cuerpo">
@@ -187,7 +188,14 @@ $_SESSION['id_cate'] = 3;
 	</div>
 
 </footer>	
-
+<script type="text/javascript">
+	$(function() {
+		console.log( "ready!" );
+		$('.main-slider').bxSlider({
+			auto: true
+			});
+	});
+</script>
 
 </body>
 </html>
