@@ -1,0 +1,231 @@
+//utils
+.hide
+	display none
+.row
+	*zoom:1
+.row:before,.row:after
+	display table
+	content ""
+	line-height 0
+.row:after
+	clear both
+	
+//header
+header
+	color #67676e
+	background #fff
+	height 79px
+	.header-ctn
+		background none
+		width 90%
+		margin 0 auto
+		div
+			float left
+		.logo
+			width 21%
+			height 100%
+			display block
+			padding-top 15px
+		.search-box
+			width 42%
+			margin 0 2%
+			padding-top 25px
+			input
+				border 1px solid #eaeeef
+				background #eaeef1
+				color #b2b3b7
+				width 100%
+				padding 8px
+				border-radius 8px
+				box-sizing border-box
+		.header-menu
+			width 33%
+	.header-menu
+		a
+			color #67676e
+			display inline-block
+			height 79px
+			line-height 79px
+			padding 0 2%
+			&:hover
+				background red
+				color #fff
+//footer
+footer
+	height 70px
+	font-size 13px
+	color #757575
+	.ctn-footer
+		width 90%
+		margin 0 auto
+	.rights
+		line-height 70px
+		width 30%
+		color #757575
+		float left
+		a
+			color #757575
+	ul
+		float right
+		width 30%
+		li
+			display inline-block
+			padding 0 5%
+			color #757575
+			line-height 70px
+			a
+				color #757575
+//home
+.products-categories
+	background #ebeff2
+	min-height 310px
+	padding-top 20px
+	font-family Arial, sans-serif
+
+.categories
+	list-style none
+
+.category
+	width 29%
+	margin 0px 1.6% 15px
+	display inline-block
+	width 280px
+	height 315px
+	position relative
+	text-overflow ellipsis
+	white-space nowrap
+	*
+		transition all ease 1s
+	&:hover
+		*
+			transition all ease 1s
+			color #fff
+		.cat-title
+			height 100%
+			bottom 0
+			background url("../img/bgcat.png")
+			.sub-categories
+				li
+					display block
+					opacity 1
+					a
+						color #fff
+						transition none
+					&:hover
+						a
+							color #ffeb3b
+							transition none
+				.title
+					color #fff
+	.ctn-cat
+		height 100%
+	.cat-title
+		width 245px
+		height 65px
+		background #fff
+		margin 0 auto
+		position absolute
+		left 0
+		right 0
+		margin-left auto
+		margin-right auto
+		bottom 0
+		.sub-categories
+			padding-left 13px
+			display block
+			li
+				display none
+				padding-right 25px
+				opacity 0
+				text-align left
+				&.title
+					display block
+					height 65px
+					line-height 65px
+					opacity 1
+					transition none
+					color #67676e
+		img
+			position absolute
+			top 27px
+			right 12px	
+		.ctn-cat
+			position absolute
+			right 10px
+			top 24px
+		label
+			display block
+			width 100%
+			line-height 65px
+			padding-right 35px
+			box-sizing border-box			
+#banner_centro
+	width 100%
+	.main-slider
+		width 100%
+		height 510px
+		& > li
+			width 100%
+			height 510px
+			position relative
+			padding-top 70px
+		li
+			.banner
+				width 100%
+				height 100%
+				position absolute
+				top 0
+				left 0
+			.banner-ctn
+				width 80%
+				margin 0 auto
+				height 100%
+			h2
+				color #ffeb3b
+				font-size 46px
+			ul
+				margin-top 50px
+				li
+					width 101px
+					height 101px
+					margin 0 25px
+					float left
+					text-align center
+					border-radius 50%
+					background #fff
+					label
+						margin-top 12px
+						color #ffeb3b
+						display inline-block
+
+ul
+	list-style none
+
+.bx-wrapper
+	margin 0 auto !important
+	.bx-viewport
+		border 0 !important
+
+body
+	font-family Arial, sans-serif
+
+.bx-controls
+	&.bx-has-pager
+		&.bx-has-controls-direction
+			position absolute
+			top 50%
+			left 0
+			background red
+			width 100%
+
+.bx-default-pager
+	display none !important
+
+.more-banner
+	color #ffeb3b
+	border 1px solid #ffeb3b
+	border-radius 15px
+	position absolute
+	bottom 30px
+	right 50px
+	padding 8px 18px

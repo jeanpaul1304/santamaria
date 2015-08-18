@@ -19,22 +19,26 @@ $_SESSION['id_cate'] = 3;
 
 
 
-	<header>
-	<div id="cabecera_v2">
-		<div id="cabecera_contenido">
-			
-				<div id="logo">
-					<img src="imagenes/beta_logo.png">
-				</div>
-
-				<div id="menu">
-					<a href="#">Inicio</a>
-					<a href="#">Nosotros</a>
-					<a href="#">Contáctenos</a>
-				</div>
-		
+	<header class="row">
+		<div class="header-ctn">
+			<div class="logo">
+				<img src="static/img/logo.png" width="200">
+			</div>
+			<div class="search-box">
+				<input type="text" placeholder="Buscar...">
+			</div>
+			<div class="header-menu">
+				<a href="#">Inicio</a>
+				<a href="#">Nosotros</a>
+				<a href="#">Contáctenos</a>
+				<a href="javascript:;">
+					<img src="static/img/twitter.png" width="17px">
+				</a>
+				<a href="javascript:;">
+					<img src="static/img/facebook.png" width="8px">
+				</a>
+			</div>
 		</div>
-	</div>	
 	</header> 
 
 	<section>
@@ -52,6 +56,7 @@ $_SESSION['id_cate'] = 3;
 								</a>
 							</li>
 						</ul>
+						<a href="javascript:;" class="more-banner">Ver más información</a>
 					</div>
 				</li>
 				<li>
@@ -66,6 +71,7 @@ $_SESSION['id_cate'] = 3;
 								</a>
 							</li>
 						</ul>
+						<a href="javascript:;" class="more-banner">Ver más información</a>
 					</div>
 				</li>						
 			</ul>
@@ -75,8 +81,140 @@ $_SESSION['id_cate'] = 3;
 
 		<div id="contenido">
 			<div id="contenido_menu">
-			<section class="products-categories">
+				<section class="products-categories">
 					<ul class="categories">
+						<li class="category">
+							<div href="javascript:;" class="ctn-cat">
+								<img src="http://lorempixel.com/245/245/">
+								<div class="cat-title">
+									<ul class="sub-categories">
+										<li class="title">
+										TITULO 1
+											<img src="static/img/bgbottom.png">
+										</li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="category">
+							<div href="javascript:;" class="ctn-cat">
+								<img src="http://lorempixel.com/245/245/">
+								<div class="cat-title">
+									<ul class="sub-categories">
+										<li class="title">
+										TITULO 1
+											<img src="static/img/bgbottom.png">
+										</li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="category">
+							<div href="javascript:;" class="ctn-cat">
+								<img src="http://lorempixel.com/245/245/">
+								<div class="cat-title">
+									<ul class="sub-categories">
+										<li class="title">
+										TITULO 1
+											<img src="static/img/bgbottom.png">
+										</li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="category">
+							<div href="javascript:;" class="ctn-cat">
+								<img src="http://lorempixel.com/245/245/">
+								<div class="cat-title">
+									<ul class="sub-categories">
+										<li class="title">
+										TITULO 1
+											<img src="static/img/bgbottom.png">
+										</li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="category">
+							<div href="javascript:;" class="ctn-cat">
+								<img src="http://lorempixel.com/245/245/">
+								<div class="cat-title">
+									<ul class="sub-categories">
+										<li class="title">
+										TITULO 1
+											<img src="static/img/bgbottom.png">
+										</li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="category">
+							<div href="javascript:;" class="ctn-cat">
+								<img src="http://lorempixel.com/245/245/">
+								<div class="cat-title">
+									<ul class="sub-categories">
+										<li class="title">
+										TITULO 1
+											<img src="static/img/bgbottom.png">
+										</li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+										<li><a href="javascript:;">Elemento 1</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>		
+				</section>
+			</div>
+		</div>
+	</div>
+
 
 		<?php
 			require('servicio/conexion.php');
@@ -97,23 +235,21 @@ $_SESSION['id_cate'] = 3;
 			}			
 			### Fin llenado de sub menus ···
 			### Impresion de menus y sub menus ···
+/*
 			echo '
-				
-						<li class="category">
-							<a href="javascript:;">
-								<span>
-									<img src="imagenes/icn_01.png">
-								</span>
-								<label>
-									'.$MostrarFila["nombre"].'
-									<img src="imagenes/icn_arrow.png">
-								</label>
-							</a>
+				<li class="category">
+
+					<div href="javascript:;" class="ctn-cat">
+						<img src="http://lorempixel.com/245/245/">
+						<div class="cat-title">
+							<img src="static/img/bgbottom.png">
+							</div>
 							<ul class="sub-categories">
-								'.$item_submenu.'
-							</ul>
-						</li>
-			';
+								<li class="title">';
+			echo $MostrarFila["nombre"];
+			echo '</li>';
+			echo $item_submenu;
+			echo '</ul></div></a></li>';*/
 
 			### Fin de impresion de menus y sub menus ···
 
@@ -171,22 +307,18 @@ $_SESSION['id_cate'] = 3;
 	
 ?>  
 
-					</ul>		
-				</section>
 
-
-</div>
-</div>
-</div>
-</section>
-
-<footer id='pie'>
-	<div class="pie_contenido">
-		&#169; All rights reserved | developed by&nbsp;<a href="http://w3layouts.com/"> luis Lopez</a>
-
-
+<footer >
+	<div class="ctn-footer">
+		<div class="rights">
+			&#169; All rights reserved | developed by&nbsp;<a href="http://w3layouts.com/"> luis Lopez</a>
+		</div>
+		<ul>
+			<li><a href="javascript:;">Inicio</a></li>
+			<li><a href="javascript:;">Nosotros</a></li>
+			<li><a href="javascript:;">Contactenos</a></li>
+		</ul>
 	</div>
-
 </footer>	
 <script type="text/javascript">
 	$(function() {
