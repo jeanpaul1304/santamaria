@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$_SESSION['id_cate'] = 3; 
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,13 +16,13 @@ $_SESSION['id_cate'] = 3;
 	<link rel="stylesheet" type="text/css" href="static//js/bxslider/jquery.bxslider.css">
 </head>
 <body>
-
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
 	<header class="row">
 		<div class="header-ctn">
 			<div class="logo">
-				<img src="static/img/logo.png" width="200">
+				<img src="static/img/Logo_v2.png" width="280">
 			</div>
 			<div class="search-box">
 				<input type="text" placeholder="Buscar...">
@@ -75,164 +75,128 @@ $_SESSION['id_cate'] = 3;
 					</div>
 				</li>						
 			</ul>
-	</div>
-
-	<div id="cuerpo">
-
-		<div id="contenido">
-			<div id="contenido_menu">
-				<section class="products-categories">
-					<ul class="categories">
-						<li class="category">
-							<div href="javascript:;" class="ctn-cat">
-								<img src="http://lorempixel.com/245/245/">
-								<div class="cat-title">
-									<ul class="sub-categories">
-										<li class="title">
-										TITULO 1
-											<img src="static/img/bgbottom.png">
-										</li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li class="category">
-							<div href="javascript:;" class="ctn-cat">
-								<img src="http://lorempixel.com/245/245/">
-								<div class="cat-title">
-									<ul class="sub-categories">
-										<li class="title">
-										TITULO 1
-											<img src="static/img/bgbottom.png">
-										</li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li class="category">
-							<div href="javascript:;" class="ctn-cat">
-								<img src="http://lorempixel.com/245/245/">
-								<div class="cat-title">
-									<ul class="sub-categories">
-										<li class="title">
-										TITULO 1
-											<img src="static/img/bgbottom.png">
-										</li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li class="category">
-							<div href="javascript:;" class="ctn-cat">
-								<img src="http://lorempixel.com/245/245/">
-								<div class="cat-title">
-									<ul class="sub-categories">
-										<li class="title">
-										TITULO 1
-											<img src="static/img/bgbottom.png">
-										</li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li class="category">
-							<div href="javascript:;" class="ctn-cat">
-								<img src="http://lorempixel.com/245/245/">
-								<div class="cat-title">
-									<ul class="sub-categories">
-										<li class="title">
-										TITULO 1
-											<img src="static/img/bgbottom.png">
-										</li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li class="category">
-							<div href="javascript:;" class="ctn-cat">
-								<img src="http://lorempixel.com/245/245/">
-								<div class="cat-title">
-									<ul class="sub-categories">
-										<li class="title">
-										TITULO 1
-											<img src="static/img/bgbottom.png">
-										</li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-										<li><a href="javascript:;">Elemento 1</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-					</ul>		
-				</section>
-			</div>
 		</div>
-	</div>
+
+		<div id="cuerpo">
+			<div id='contenido'>
+				<div id='contenido_menu'>
+					<section class='products-categories'>
+						<ul class='categories'>
+							<?php 
+							require('servicio/conexion.php');
+							$query = "SELECT id,nombre,imagen
+							FROM tb_area ";      
+							$Resultado=mysqli_query($con,$query);
+							while($MostrarFila=mysqli_fetch_array($Resultado)){
+								echo "
+								<li class='category'>
+									<div href='javascript:;' class='ctn-cat'>
+										<img src='imagenes/".$MostrarFila['imagen']."'>
+										<div class='cat-title'>
+											<ul class='sub-categories'>
+												<li class='title'>
+													".$MostrarFila['nombre']."
+													<img src='static/img/bgbottom.png'>
+												</li>";
+												$query2 = "SELECT id_categoria,nom_categoria
+												FROM tb_categoria WHERE id_area=".$MostrarFila['id']."";      
+												$Resultado2=mysqli_query($con,$query2);
+												while($MostrarFila2=mysqli_fetch_array($Resultado2)){
+
+													echo "<li><a href='javascript:;'> ".$MostrarFila2['nom_categoria']."</a></li>";
+
+												}
+
+												echo "</ul>
+											</div>
+										</div>
+									</li>";
+								}
+								?>
+<!-- GASES INDUSTRIALES -->								
+								<li class="category">
+									<div href="javascript:;" class="ctn-cat">
+										<img class="imagen_menu" src="imagenes/autogeno2.png">
+										<div class="cat-title">
+											<ul class="sub-categories">
+												<li class="title">
+													Gases Industriales
+													<img src="static/img/bgbottom.png">
+												</li>
+												<li><a href="javascript:;">Elemento 1</a></li>
+												<li><a href="javascript:;">Elemento 1</a></li>
+												<li><a href="javascript:;">Elemento 1</a></li>
+												<li><a href="javascript:;">Elemento 1</a></li>
+												<li><a href="javascript:;">Elemento 1</a></li>
+												<li><a href="javascript:;">Elemento 1</a></li>
+												<li><a href="javascript:;">Elemento 1</a></li>
+												<li><a href="javascript:;">Elemento 1</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+<!--ABRASIVO-->
+								<li class="category">
+									<div href="javascript:;" class="ctn-cat">
+										<img class="imagen_menu" src="imagenes/abrasivos2.png">
+										<div class="cat-title">
+											<ul class="sub-categories">
+												<li class="title">
+													Abrasivos
+													<img src="static/img/bgbottom.png">
+												</li>
+												<li><a href="javascript:;">Discos</a></li>
+												<li><a href="javascript:;">Pidra de esmeril</a></li>
+												<li><a href="javascript:;">Lijas</a></li>
+												<li><a href="javascript:;">Puntas montadas</a></li>
+												<li><a href="javascript:;">Escobillas de Mmquinas</a></li>
+												<li><a href="javascript:;">Escobillas de mano</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+<!-- SOLDADURA ELECTRICA -->
+								<li class="category">
+									<div href="javascript:;" class="ctn-cat">
+										<img class="imagen_menu" src="imagenes/soldadura_electrica.png">
+										<div class="cat-title">
+											<ul class="sub-categories">
+												<li class="title">
+													Soldadura Electrica
+													<img src="static/img/bgbottom.png">
+												</li>
+												<li><a href="javascript:;">Electrodos</a></li>
+												<li><a href="javascript:;">Porta electrodos y tenazas</a></li>
+												<li><a href="javascript:;">Accesorios</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+
+							</ul>	
+						</section>
+					</div>
+				</div>
+			</div>
 
 
-		<?php
+			<?php
 			require('servicio/conexion.php');
-            $query = "SELECT id,nombre
-            FROM tb_area ";      
-            $Resultado=mysqli_query($con,$query);
+			$query = "SELECT id,nombre
+			FROM tb_area ";      
+			$Resultado=mysqli_query($con,$query);
 
-		while($MostrarFila=mysqli_fetch_array($Resultado)){
+			while($MostrarFila=mysqli_fetch_array($Resultado)){
 			### Llenado de sub menus ···
-			$query2 = "SELECT id_categoria,nom_categoria FROM tb_categoria WHERE id_area=".$MostrarFila['id']."";      
-			$Resultado2=mysqli_query($con,$query2);
-			$item_submenu = "";
-			while($MostrarFila2=mysqli_fetch_array($Resultado2)){
-				if ($MostrarFila2['id_categoria'] == 1 ) {
-					$item_submenu = $item_submenu."<li><a href='seguridadindustrial/producto.php?id_categoria=".$MostrarFila2['id_categoria']."&id_subcategoria=4'>".$MostrarFila2['nom_categoria']."</a></li>";
-				}
-			$item_submenu = $item_submenu."<li><a href='seguridadindustrial/producto.php?id_categoria=".$MostrarFila2['id_categoria']."&id_subcategoria=0'>".$MostrarFila2['nom_categoria']."</a></li>";
-			}			
+				$query2 = "SELECT id_categoria,nom_categoria FROM tb_categoria WHERE id_area=".$MostrarFila['id']."";      
+				$Resultado2=mysqli_query($con,$query2);
+				$item_submenu = "";
+				while($MostrarFila2=mysqli_fetch_array($Resultado2)){
+					if ($MostrarFila2['id_categoria'] == 1 ) {
+						$item_submenu = $item_submenu."<li><a href='seguridadindustrial/producto.php?id_categoria=".$MostrarFila2['id_categoria']."&id_subcategoria=4'>".$MostrarFila2['nom_categoria']."</a></li>";
+					}
+					$item_submenu = $item_submenu."<li><a href='seguridadindustrial/producto.php?id_categoria=".$MostrarFila2['id_categoria']."&id_subcategoria=0'>".$MostrarFila2['nom_categoria']."</a></li>";
+				}			
 			### Fin llenado de sub menus ···
 			### Impresion de menus y sub menus ···
 /*
@@ -267,67 +231,67 @@ $_SESSION['id_cate'] = 3;
 										<img src='imagenes/icn_01.png'>
 									</td>
 									<td class='menuFondo'>
-							
+
 										<table width='100%'>
 											<tr>
 												<td align='left'>".
-												$MostrarFila['nombre']	
-												."</td>
-												<td>
-													<img src='imagenes/icn_arrow.png'>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-									<ul class='ulu'>";
-							     $query2 = "SELECT id_categoria,nom_categoria
-						            FROM tb_categoria WHERE id_area=".$MostrarFila['id']."";      
-						            $Resultado2=mysqli_query($con,$query2);
+													$MostrarFila['nombre']	
+													."</td>
+													<td>
+														<img src='imagenes/icn_arrow.png'>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<ul class='ulu'>";
+									$query2 = "SELECT id_categoria,nom_categoria
+									FROM tb_categoria WHERE id_area=".$MostrarFila['id']."";      
+									$Resultado2=mysqli_query($con,$query2);
 
-								while($MostrarFila2=mysqli_fetch_array($Resultado2)){
-           
-           						if ($MostrarFila2['id_categoria'] == 1 ) {
-           							echo "<li><a href='seguridadindustrial/producto.php?id_categoria=".$MostrarFila2['id_categoria']."&id_subcategoria=4'>".$MostrarFila2['nom_categoria']."</a></li>";
-           						}
-								echo "<li><a href='seguridadindustrial/producto.php?id_categoria=".$MostrarFila2['id_categoria']."&id_subcategoria=0'>".$MostrarFila2['nom_categoria']."</a></li>";
+									while($MostrarFila2=mysqli_fetch_array($Resultado2)){
 
+										if ($MostrarFila2['id_categoria'] == 1 ) {
+											echo "<li><a href='seguridadindustrial/producto.php?id_categoria=".$MostrarFila2['id_categoria']."&id_subcategoria=4'>".$MostrarFila2['nom_categoria']."</a></li>";
 										}
-						echo "</ul>
-						</div>
-						
-		
-					</li>
-				</ul>
-			</nav>
+										echo "<li><a href='seguridadindustrial/producto.php?id_categoria=".$MostrarFila2['id_categoria']."&id_subcategoria=0'>".$MostrarFila2['nom_categoria']."</a></li>";
 
-		</div>";
-	}
-	
-?>  
+									}
+									echo "</ul>
+								</div>
 
 
-<footer >
-	<div class="ctn-footer">
-		<div class="rights">
-			&#169; All rights reserved | developed by&nbsp;<a href="http://w3layouts.com/"> luis Lopez</a>
-		</div>
-		<ul>
-			<li><a href="javascript:;">Inicio</a></li>
-			<li><a href="javascript:;">Nosotros</a></li>
-			<li><a href="javascript:;">Contactenos</a></li>
-		</ul>
-	</div>
-</footer>	
-<script type="text/javascript">
-	$(function() {
-		console.log( "ready!" );
-		$('.main-slider').bxSlider({
-			auto: true
-			});
-	});
-</script>
+							</li>
+						</ul>
+					</nav>
 
-</body>
-</html>
+				</div>";
+			}
+
+			?>  
+
+
+			<footer >
+				<div class="ctn-footer">
+					<div class="rights">
+						&#169; All rights reserved | developed by&nbsp;<a href="http://w3layouts.com/"> luis Lopez</a>
+					</div>
+					<ul>
+						<li><a href="javascript:;">Inicio</a></li>
+						<li><a href="javascript:;">Nosotros</a></li>
+						<li><a href="javascript:;">Contactenos</a></li>
+					</ul>
+				</div>
+			</footer>	
+			<script type="text/javascript">
+				$(function() {
+					console.log( "ready!" );
+					$('.main-slider').bxSlider({
+						auto: true
+					});
+				});
+			</script>
+
+		</body>
+		</html>
