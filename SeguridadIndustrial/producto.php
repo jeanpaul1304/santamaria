@@ -10,34 +10,39 @@ $_SESSION['id_cate'] = $_GET["id_categoria"];
 	<title>Industria Comercial Santa MAria</title>
 	<link rel="stylesheet" type="text/css" href="../style/style2.css">
 	<link rel="stylesheet" type="text/css" href="../style/menu.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/main.css">
 
 	<style type="text/css">
 
 	</style>
 </head>
-<body>
+<body class="body-product">
 
 
 
-	<header>
-	<div id="cabecera_v2">
-		<div id="cabecera_contenido">
-			
-				<div id="logo">
-					<img src="../imagenes/beta_logo.png">
-				</div>
+  <header class="row">
+    <div class="header-ctn">
+      <div class="logo">
+        <img src="../static/img/logo.png" width="200">
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Buscar...">
+      </div>
+      <div class="header-menu">
+        <a href="#">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contáctenos</a>
+        <a href="javascript:;">
+          <img src="../static/img/twitter.png" width="17px">
+        </a>
+        <a href="javascript:;">
+          <img src="../static/img/facebook.png" width="8px">
+        </a>
+      </div>
+    </div>
+  </header> 
 
-				<div id="menu">
-					<a href="#">Inicio</a>
-					<a href="#">Nosotros</a>
-					<a href="#">Contáctenos</a>
-				</div>
-		
-		</div>
-	</div>	
-	</header> 
-
-	<section>
+	<section class="section-product">
 		<div id="cuerpo">
 			<div id="cuerpo_lateral">
 			 	<ul class="tag_nav list-unstyled">
@@ -53,44 +58,44 @@ $_SESSION['id_cate'] = $_GET["id_categoria"];
           		</ul>
         	</div>
 		
-        <div id='wrapper'>
-          <ul class='tabs'>
-            <?php
-            if ($_GET["id_categoria"]==1) {
-              # code...
-              echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=4', 'cuerpo_centro');\">Respiradores y filtros </a></li>";
-              echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=5', 'cuerpo_centro');\">Mascarillas desechables</a></li>";
-
-            }
-            if ($_GET["id_categoria"]==4) {
-              # code...
-              echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=8', 'cuerpo_centro');\">Lentes </a></li>";
-              echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=9', 'cuerpo_centro');\">Goggles </a></li>";
-              echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=10', 'cuerpo_centro');\">Accesorios </a></li>";
-            }
-             if ($_GET["id_categoria"]==40) {
-              # code...
-              echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=11', 'cuerpo_centro');\">Ropa de Trabajo</a></li>";
-              echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=12', 'cuerpo_centro');\">Ropa Industrial</a></li>";
-              echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=13', 'cuerpo_centro');\">Ropa Desechable</a></li>";
-              echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=14', 'cuerpo_centro');\">Fajas Lumbares</a></li>";
-            }
-
-
-
-            ?>
-            <!--<li><a href="javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=4', 'cuerpocentro');">Respiradores</a></li>
-            <li><a href="javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=5', 'cuerpocentro');">Filtros</a></li>
-            -->
-
-          </ul>
-        </div>
+        
 			<div id="cuerpo_centro">
+            <h3>Categoría de Producto</h3>
+            <div id='wrapper'>
+              <ul class='tabs'>
+                <?php
+                if ($_GET["id_categoria"]==1) {
+                  # code...
+                  echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=4', 'cuerpo_centro');\">Respiradores y filtros </a></li>";
+                  echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=5', 'cuerpo_centro');\">Mascarillas desechables</a></li>";
 
+                }
+                if ($_GET["id_categoria"]==4) {
+                  # code...
+                  echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=8', 'cuerpo_centro');\">Lentes </a></li>";
+                  echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=9', 'cuerpo_centro');\">Goggles </a></li>";
+                  echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=10', 'cuerpo_centro');\">Accesorios </a></li>";
+                }
+                 if ($_GET["id_categoria"]==40) {
+                  # code...
+                  echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=11', 'cuerpo_centro');\">Ropa de Trabajo</a></li>";
+                  echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=12', 'cuerpo_centro');\">Ropa Industrial</a></li>";
+                  echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=13', 'cuerpo_centro');\">Ropa Desechable</a></li>";
+                  echo "<li><a class='myButton' href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=4&id_subcategoria=14', 'cuerpo_centro');\">Fajas Lumbares</a></li>";
+                }
+
+
+
+                ?>
+                <!--<li><a href="javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=4', 'cuerpocentro');">Respiradores</a></li>
+                <li><a href="javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=5', 'cuerpocentro');">Filtros</a></li>
+                -->
+                <hr>
+              </ul>
+            </div>
 				  	<?php 
           			 include('paginador_productos.php');
           			?> 
-
 			</div>
 
 		</div>

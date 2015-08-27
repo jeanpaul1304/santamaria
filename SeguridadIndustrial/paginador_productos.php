@@ -78,12 +78,14 @@ if($_SESSION['id_cate']==1){
             
             //desplazamiento
             echo "<br>";
+            echo "<div class='paginator'>";
             echo "<a id onclick=\"Pagina('1','$id_sub')\">Primero</a> ";
             if($PagAct>1) echo "<a onclick=\"Pagina('$PagAnt','$id_sub')\">Anterior</a> ";
             echo "<strong>Pagina ".$PagAct."/".$PagUlt."</strong>";
             if($PagAct<$PagUlt)  echo " <a onclick=\"Pagina('$PagSig','$id_sub')\">Siguiente</a> ";
             echo "<a onclick=\"Pagina('$PagUlt','$id_sub')\">Ultimo</a>";
 
+            echo "</div>";
             mysqli_free_result ($Resultado2);
 
           } 
@@ -147,12 +149,13 @@ if($_SESSION['id_cate']==1){
             
             //desplazamiento
             echo "<br>";
+            echo "<div class='paginator'>";
             echo "<a id onclick=\"Pagina('1','$id_sub')\">Primero</a> ";
             if($PagAct>1) echo "<a onclick=\"Pagina('$PagAnt','$id_sub')\">Anterior</a> ";
             echo "<strong>Pagina ".$PagAct."/".$PagUlt."</strong>";
             if($PagAct<$PagUlt)  echo " <a onclick=\"Pagina('$PagSig','$id_sub')\">Siguiente</a> ";
             echo "<a onclick=\"Pagina('$PagUlt','$id_sub')\">Ultimo</a>";
-
+            echo "</div>";
               mysqli_free_result ($Resultado2);
         
           }
@@ -211,12 +214,13 @@ if($_SESSION['id_cate']==1){
             
             //desplazamiento
             echo "<br>";
+            echo "<div class='paginator'>";
             echo "<a id onclick=\"Pagina('1','$id_sub')\">Primero</a> ";
             if($PagAct>1) echo "<a onclick=\"Pagina('$PagAnt','$id_sub')\">Anterior</a> ";
             echo "<strong>Pagina ".$PagAct."/".$PagUlt."</strong>";
             if($PagAct<$PagUlt)  echo " <a onclick=\"Pagina('$PagSig','$id_sub')\">Siguiente</a> ";
             echo "<a onclick=\"Pagina('$PagUlt','$id_sub')\">Ultimo</a>";
-
+            echo "</div>";
               mysqli_free_result ($Resultado2);
           }
           
@@ -267,11 +271,13 @@ if($_SESSION['id_cate']==1){
             if($_SESSION['id_cate']!=1){
             //desplazamiento
             echo "<br>";
+            echo "<div class='paginator'>";
             echo "<a id onclick=\"Pagina('1')\">Primero</a> ";
             if($PagAct>1) echo "<a onclick=\"Pagina('$PagAnt')\">Anterior</a> ";
             echo "<strong>Pagina ".$PagAct."/".$PagUlt."</strong>";
             if($PagAct<$PagUlt)  echo " <a onclick=\"Pagina('$PagSig')\">Siguiente</a> ";
             echo "<a onclick=\"Pagina('$PagUlt')\">Ultimo</a>";
+            echo "</div>";
              }
           }
  

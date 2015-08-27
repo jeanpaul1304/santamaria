@@ -97,6 +97,13 @@ footer
 	*
 		transition all ease 1s
 	&:hover
+		.cat-title
+			.sub-categories
+				li
+					transition all ease 1s .3s
+					a
+						opacity 1
+						transition none
 		*
 			transition all ease 1s
 			color #fff
@@ -108,17 +115,12 @@ footer
 				li
 					display block
 					opacity 1
-					a
-						color #fff
-						transition none
 					&:hover
 						a
 							color #ffeb3b
 							transition none
 				.title
 					color #fff
-	.ctn-cat
-		height 100%
 	.cat-title
 		width 245px
 		height 65px
@@ -134,10 +136,10 @@ footer
 			padding-left 13px
 			display block
 			li
-				display none
 				padding-right 25px
 				opacity 0
 				text-align left
+				transition all ease 1s .3s
 				&.title
 					display block
 					height 65px
@@ -145,6 +147,11 @@ footer
 					opacity 1
 					transition none
 					color #67676e
+				a
+					opacity 0
+				&:hover
+					a
+						transition none
 		img
 			position absolute
 			top 27px
@@ -159,6 +166,8 @@ footer
 			line-height 65px
 			padding-right 35px
 			box-sizing border-box			
+	.ctn-cat
+		height 100%
 #banner_centro
 	width 100%
 	.main-slider
@@ -229,3 +238,68 @@ body
 	bottom 30px
 	right 50px
 	padding 8px 18px
+.section-product
+	background #ebeff2
+	#cuerpo
+		padding-top 40px
+		width 90%
+		margin 0 auto
+	#cuerpo_centro
+		text-align left
+		padding-left 5%
+		width 74%
+		h3
+			margin-left 10px
+		.tabs
+			li
+				display inline-block
+				padding-bottom 10px
+				border-bottom 2px solid transparent
+				z-index 1
+				padding 5px 15px
+				text-align left
+				&:first-child
+					padding 5px 20px
+				&:hover, &.active
+					border-bottom 2px solid #f44336
+					a
+						color #f44336
+				a
+					color #909099
+			hr
+				border 0
+				border-top 2px solid #909099
+				position absolute
+				bottom 0
+				left 0
+				width 100%
+	#modulo_r
+		transition all ease 1s
+		h3
+			font-size 16px
+			text-transform capitalize
+			margin-left 0
+		img
+			width 162px
+			height 162px
+.body-product
+	font-family 'Arial', sans-serif
+	h3
+		font-size 16px
+		color #67676e
+.paginator
+	width 100%
+	text-align right
+	padding 40px 0
+	a, strong
+		background #67676e
+		padding 8px
+		color #fff
+		cursor pointer
+		&:hover, &.active
+			background #f44336
+			color #fff
+.tag_nav li a
+	transition all ease .3s
+	&:hover
+		background #f44336	
