@@ -22,7 +22,9 @@ session_start();
 	<header class="row">
 		<div class="header-ctn">
 			<div class="logo">
-				<img src="static/img/Logo_v2.png" width="280">
+				<a href="">
+					<img src="static/img/Logo_v2.png" width="280">
+				</a>	
 			</div>
 			<div class="search-box">
 				<input type="text" placeholder="Buscar...">
@@ -103,7 +105,7 @@ session_start();
 												$Resultado2=mysqli_query($con,$query2);
 												while($MostrarFila2=mysqli_fetch_array($Resultado2)){
 
-													echo "<li><a href='javascript:;'> ".$MostrarFila2['nom_categoria']."</a></li>";
+													echo "<li><a href='seguridadindustrial/producto.php?id_categoria=".$MostrarFila2['id_categoria']."&id_subcategoria=0'> ".$MostrarFila2['nom_categoria']."</a></li>";
 
 												}
 

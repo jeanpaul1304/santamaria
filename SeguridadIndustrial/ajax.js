@@ -17,7 +17,7 @@ function objetoAjax(){
 
 function Pagina(nropagina,id_subcategoria){
  //donde se mostrará los registros
- divContenido = document.getElementById('cuerpocentro');
+ divContenido = document.getElementById('cuerpo_contenido');
 
  ajax=objetoAjax();
  //uso del medoto GET
