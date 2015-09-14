@@ -363,3 +363,101 @@ body {
 .tag_nav li a:hover {
   background: #f44336;
 }
+.miniaturas_widget {
+  width: 240px;
+  height: 300px;
+  background: #fff;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.miniaturas_widget .img-mini-ctn {
+  width: 100%;
+  height: 200px;
+}
+.miniaturas_widget .img-mini-ctn img {
+  width: 100%;
+  max-height: 200px;
+}
+.miniaturas_widget h2 {
+  font-size: 16px;
+}
+.miniaturas_widget .miniaturas {
+  text-align: center;
+}
+.miniaturas_widget .miniaturas li {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 0 4px;
+}
+.miniaturas_widget .miniaturas li.active {
+  border: 1px solid #f00;
+}
+.product-info {
+  float: left;
+  margin-left: 20px;
+  width: 450px;
+}
+.product-info ul li {
+  margin-top: 10px;
+  line-height: 20px;
+}
+.product-info ul li:before {
+  content: "• ";
+  color: #f00;
+  font-size: 25px;
+}
+.product-info .ctn-buttons {
+  margin-top: 15px;
+}
+.product-info .ctn-buttons .fic-tec {
+  float: left;
+}
+.product-info .ctn-buttons .fic-tec > a {
+  float: left;
+}
+.product-info .ctn-buttons .fic-tec p {
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.product-info .ctn-buttons .share {
+  float: right;
+  margin-top: 6px;
+}
+.product-info .ctn-buttons .share p {
+  float: left;
+}
+.product-info .ctn-buttons .share .social-btns {
+  float: left;
+  margin-top: 2px;
+  margin-left: 16px;
+}
+.product-info .ctn-buttons .share .social-btns a {
+  margin: 0 3px;
+}
+.navigator-detail {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+.navigator-detail h3 {
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+}
+.navigator-detail #cuerpo_contenido {
+  margin-top: 15px;
+}
+.navigator-detail #modulo_r {
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+  padding: 8px;
+}
+.navigator-detail #modulo_r h3 {
+  text-align: center;
+}
