@@ -17,14 +17,14 @@ $_SESSION['id_cate'] = $_GET["id_categoria"];
 	</style>
 </head>
 <body class="body-product">
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
 
 
   <header class="row">
     <div class="header-ctn">
       <div class="logo">
         <a href="../index.php">
-          <img src="../static/img/logo.png" width="200">
+        <img src="../static/img/Logo_v2.png" width="270">
         </a> 
       </div>
       <div class="search-box">

@@ -16,14 +16,13 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="static//js/bxslider/jquery.bxslider.css">
 </head>
 <body>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
 	<header class="row">
 		<div class="header-ctn">
 			<div class="logo">
 				<a href="">
-					<img src="static/img/Logo_v2.png" width="280">
+					<img src="static/img/Logo_v2.png" width="270">
 				</a>	
 			</div>
 			<div class="search-box">

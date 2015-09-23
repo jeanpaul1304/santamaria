@@ -43,7 +43,8 @@ if($_SESSION['id_cate']==1){
              while($MostrarFila=mysqli_fetch_array($Resultado2)){
                //$url=pa.html;
               
-          echo "<div id='modulo_r'>";  
+          echo "<div id='modulo_r'>  
+          <a href='descripcion.php?id_product=".$MostrarFila['id']."'>";  
                   echo "<table width='100%'  border='0' cellspacing='0'>";  
                  echo "<tr>";  
                   echo " <td id='des1' align='center'>";  
@@ -59,7 +60,7 @@ if($_SESSION['id_cate']==1){
                   echo "   </tr>";  
     
                  echo "</table>";    
-            echo " </div>"; 
+            echo " </a></div>"; 
 
                 }
 
@@ -179,7 +180,8 @@ if($_SESSION['id_cate']==1){
              while($MostrarFila=mysqli_fetch_array($Resultado2)){
                //$url=pa.html;
               
-          echo "<div id='modulo_r'>";  
+          echo "<div id='modulo_r'>
+          <a href='descripcion.php?id_product=".$MostrarFila['id']."'>";  
                   echo "<table width='100%'  border='0' cellspacing='0'>";  
                  echo "<tr>";  
                   echo " <td id='des1' align='center'>";  
@@ -195,7 +197,7 @@ if($_SESSION['id_cate']==1){
                   echo "   </tr>";  
     
                  echo "</table>";  
-            echo " </div>"; 
+            echo " </a></div>"; 
 
                 }
 

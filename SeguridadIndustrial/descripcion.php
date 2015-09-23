@@ -1,3 +1,39 @@
+<?php if (!isset($_SESSION)) {
+   session_start();
+}
+$_SESSION['id_categoria'] = $_SESSION['id_cate']; 
+
+
+  require('../servicio/conexion.php');
+  $query = "SELECT id,nom_producto, desc_mini,img_large1,img_large2,img_large3,img_small1,img_small2,detalles,desc_full,ficha
+  FROM tb_seguridad_industrial WHERE id=".$_GET['id_product']."";
+
+  $R=mysqli_query($con,$query);
+  $Mostrar=mysqli_fetch_array($R);
+
+
+  $R_desc=mysqli_query($con,$query);
+  $R_Mostrar_desc=mysqli_fetch_array($R_desc);
+
+  $R_detalle=mysqli_query($con,$query);
+  $R_mostrar_detalle=mysqli_fetch_array($R_detalle);
+
+  $R_pdf=mysqli_query($con,$query);
+  $R_mostrar_ficha=mysqli_fetch_array($R_pdf);
+
+  $R_imgLarge=mysqli_query($con,$query);
+  $Mostrar_img=mysqli_fetch_array($R_imgLarge);
+
+  $R_imgLarge1=mysqli_query($con,$query);
+  $R_imgSmall1=mysqli_query($con,$query);$R_imgSmall1_768=mysqli_query($con,$query);
+
+  $R_imgLarge2=mysqli_query($con,$query);
+  $R_imgSmall2=mysqli_query($con,$query);$R_imgSmall2_768=mysqli_query($con,$query);
+
+ 
+ $R_desc_responsive=mysqli_query($con,$query);
+ 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,14 +49,14 @@
 	</style>
 </head>
 <body class="body-product">
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
 
 
   <header class="row">
     <div class="header-ctn">
       <div class="logo">
         <a href="../index.php">
-          <img src="../static/img/logo.png" width="200">
+          <img src="../static/img/Logo_v2.png" width="270">
         </a> 
       </div>
       <div class="search-box">
@@ -60,19 +96,58 @@
 			<div id="cuerpo_centro">
         <div class="miniaturas_widget">
           <div class="img-mini-ctn">
-            <img src="http://lorempixel.com/200/200">
+            <!--<img src="http://lorempixel.com/200/200">-->
+             <?php
+                echo "<img id='imgLarge' NAME='matrix' src='large/".$Mostrar_img['img_large1']."'>";
+               ?>
           </div>
-          <h2>Máscara adaptable al casco</h2>
+          <h2>
+              <?php 
+                  require('../servicio/conexion.php');
+                  $query = "SELECT id,nom_producto
+                  FROM tb_seguridad_industrial Where id=".$_GET['id_product']."";
+                  $Resultado=mysqli_query($con,$query);
+                  $MostrarFila=mysqli_fetch_array($Resultado);
+                  echo $MostrarFila['nom_producto'];
+                  ?>
+          </h2>
           <ul class="miniaturas">
-            <li class="active">
-              <img src="http://lorempixel.com/200/200" width="40" height="40">
-            </li>
-            <li>
-              <img src="http://lorempixel.com/200/200" width="40" height="40">
-            </li>
-            <li>
-              <img src="http://lorempixel.com/200/200" width="40" height="40">
-            </li>
+            
+
+            <?php
+               if ( $Mostrar['img_large1']!=NULL) {
+                      echo "<li class='active'>
+                              <a href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=4', 'cuerpocentro');\"> 
+                                <img width='40px' height='40px' id='' NAME='matrix' src='large/".$Mostrar_img['img_large1']."'>
+                              </a>
+                            </li>";
+                }
+              ?>      
+    
+        
+              <!--<img src="http://lorempixel.com/200/200" width="40" height="40">-->
+            <?php
+               if ( $Mostrar['img_large2']!=NULL) {
+                      echo "<li>
+                              <a href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=4', 'cuerpocentro');\"> 
+                                <img width='40px' height='40px' id='' NAME='matrix' src='large/".$Mostrar_img['img_large2']."'>
+                              </a>
+                            </li>";
+                }
+              ?>      
+
+
+              <!--<img src="http://lorempixel.com/200/200" width="40" height="40">-->
+                  <?php
+                     if ($Mostrar['img_large3']!=NULL) {
+
+                       echo "<li><a href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=5', 'cuerpocentro');\"> 
+                              <img width='40px' height='40px' id='' NAME='matrix' src='large/".$Mostrar_img['img_large3']."'>
+                            </a></li>";
+                    }
+                    ?>
+                  
+           
             <li>
               <img src="http://lorempixel.com/200/200" width="40" height="40">
             </li>
@@ -80,14 +155,29 @@
         </div>
 
         <div class="product-info">
-          <h2>PROTECCIÓN SOLDADOR</h2>
-          <ul>
+          <h2>
+                <?php 
+                  require('../servicio/conexion.php');
+                  $query = "SELECT id_categoria,nom_categoria
+                  FROM tb_categoria Where id_categoria=".$_SESSION['id_categoria']."";
+                  $Resultado=mysqli_query($con,$query);
+                  $MostrarFila=mysqli_fetch_array($Resultado);
+                  echo $MostrarFila['nom_categoria'];
+                  ?> 
+          </h2>
+          <!--<ul>
             <li>Diseño clásico y ergonomico</li>
             <li>Fabricada en material de nylon reforzado y antiflama</li>
             <li>Alta resistencia al calor y chispas incandescentes</li>
             <li>Visor levantable con luna de cristal de 2 x 4 ¼”</li>
             <li>Clip de adaptador universal para adaptar al casco procedencia:taiwan</li>
             <li>Norma ANZI Z87</li>
+          </ul>-->
+          <ul>
+            <?php
+                echo $R_mostrar_detalle['detalles'];
+ 
+              ?>
           </ul>
           <div class="ctn-buttons">
             <div class="fic-tec">
