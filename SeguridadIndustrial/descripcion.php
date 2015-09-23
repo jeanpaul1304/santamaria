@@ -115,7 +115,7 @@ $_SESSION['id_categoria'] = $_SESSION['id_cate'];
             
 
             <?php
-               if ( $Mostrar['img_large1']!=NULL) {
+               if ( $Mostrar['img_large1'] != NULL && $Mostrar['img_large1'] != "no" ) {
                       echo "<li class='active'>
                               <a href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=4', 'cuerpocentro');\"> 
                                 <img width='40px' height='40px' id='' NAME='matrix' src='large/".$Mostrar_img['img_large1']."'>
@@ -127,7 +127,7 @@ $_SESSION['id_categoria'] = $_SESSION['id_cate'];
         
               <!--<img src="http://lorempixel.com/200/200" width="40" height="40">-->
             <?php
-               if ( $Mostrar['img_large2']!=NULL) {
+               if ( $Mostrar['img_large2']!=NULL && $Mostrar['img_large2'] != "no") {
                       echo "<li>
                               <a href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=4', 'cuerpocentro');\"> 
                                 <img width='40px' height='40px' id='' NAME='matrix' src='large/".$Mostrar_img['img_large2']."'>
@@ -139,7 +139,7 @@ $_SESSION['id_categoria'] = $_SESSION['id_cate'];
 
               <!--<img src="http://lorempixel.com/200/200" width="40" height="40">-->
                   <?php
-                     if ($Mostrar['img_large3']!=NULL) {
+                     if ($Mostrar['img_large3'] != NULL && $Mostrar['img_large3'] != "no") {
 
                        echo "<li><a href=\"javascript:llamarasincrono('paginador_productos.php?id_categoria=1&id_subcategoria=5', 'cuerpocentro');\"> 
                               <img width='40px' height='40px' id='' NAME='matrix' src='large/".$Mostrar_img['img_large3']."'>
